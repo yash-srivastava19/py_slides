@@ -4,8 +4,9 @@ A terminal-based markdown slide presentation tool inspired by the Go package "sl
 
 ![screengrab of py_slides](image-1.png)
 
-## Installation
+## Installation(SOON)
 
+Till I pulish the package on PyPI, consider cloning the repository and using `py_slides`.
 ```bash
 pip install py_slides
 ```
