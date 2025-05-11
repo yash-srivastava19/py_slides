@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-termslides: A terminal-based markdown slide presentation tool
+pyslides: A terminal-based markdown slide presentation tool
 """
 import argparse
 import os
@@ -10,13 +10,8 @@ from dataclasses import dataclass
 from typing import List, Optional
 
 from blessed import Terminal
-from pygments import highlight
-from pygments.formatters import Terminal256Formatter
-from pygments.lexers import get_lexer_by_name, guess_lexer
 from rich.console import Console
 from rich.markdown import Markdown
-from rich.highlighter import JSONHighlighter
-
 
 @dataclass
 class Slide:
@@ -103,7 +98,6 @@ class Presentation:
         print(self.term.move(footer_y - 2, self.term.width - 10 - len(footer_text)) + footer_text)
         print(self.term.move(footer_y + 1, 2) + footer)
 
-        # print(self.term.move(footer_y, 0) + "-" * self.term.width)
 
     def _display_help(self) -> None:
         """Display the help screen."""
