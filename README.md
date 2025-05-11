@@ -2,16 +2,18 @@
 
 A terminal-based markdown slide presentation tool inspired by the Go package "slides".
 
+![screengrab of py_slides](image-1.png)
+
 ## Installation
 
 ```bash
-pip install .
+pip install py_slides
 ```
 
 ## Usage
 
 ```bash
-termslides your_presentation.md
+py_slides path/to/your_presentation.md
 ```
 
 ## Markdown Format
@@ -54,9 +56,8 @@ def code_example():
 
 ## Requirements
 
-* Python 3.7+
-* Dependencies: markdown, blessed, pygments, rich
+* Python 3.11+
+* Dependencies: blessed, rich
 
 ## License
-
 MIT
